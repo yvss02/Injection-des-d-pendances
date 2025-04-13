@@ -1,5 +1,11 @@
 package dao;
 
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
+
+@Repository
+@Qualifier("dao1")
 public class DaoImpl implements IDao {
     @Override
     public double getData() {

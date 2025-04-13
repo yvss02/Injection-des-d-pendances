@@ -5,9 +5,13 @@
                            http://www.springframework.org/schema/beans/spring-beans.xsd">
 <!--    DaoImpl dao= new DaoImpl();-->
     <bean id="d" class="ext.DaoImplV2"></bean>
+    <bean id="metier" class="metier.MetierImpl">
+    <constructor-arg ref="d"/>
+    </bean>
 <!--   MetierImpl metier=new MetierImpl();
        metier.setDao(dao);-->
-    <bean id="metier" class="metier.MetierImpl">
-        <property name="dao" ref="d"/>
-    </bean>
+<!--    <bean id="metier" class="metier.MetierImpl">-->
+<!--        <property name="dao" ref="d"/>-->
+<!--    </bean>-->
+
 </beans>
