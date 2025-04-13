@@ -10,7 +10,7 @@ public class MetierImpl implements IMetier {
     //@Autowired
     private IDao dao;
 
-    public MetierImpl(@Qualifier("dao1") IDao dao) {
+    public MetierImpl(@Qualifier("dao2") IDao dao) {
         this.dao = dao;
     }
 //    public MetierImpl() {}
